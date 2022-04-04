@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Sneha Sharma Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass css/style.scss:css/style.css css/header.scss css/header.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snehasharma1111/snehasharma1111.github.io.git"
+  },
+  "keywords": [],
+  "author": "Sneha Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snehasharma1111/snehasharma1111.github.io/issues"
+  },
+  "homepage": "https://github.com/snehasharma1111/snehasharma1111.github.io#readme"
+}
