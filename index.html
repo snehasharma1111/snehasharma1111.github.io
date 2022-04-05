@@ -6,21 +6,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Sneha Sharma Portfolio" />
 		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/header.css" />
+		<link
+			rel="shortcut icon"
+			href="./images/favicon.png"
+			type="image/x-icon"
+		/>
 		<meta name="theme-color" content="#34a853" />
 		<title>Sneha Sharma</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" data-aos="fade-down">
 			<div class="header-left">
-				<a href="/">
-					<span class="material-icons">all_inclusive</span>
-					<span>Sneha Sharma</span>
-				</a>
+				<div class="header-left-logo">
+					<a href="/">
+						<span class="material-icons">all_inclusive</span>
+						<span>Sneha Sharma</span>
+					</a>
+				</div>
 			</div>
 			<div class="header-right">
 				<nav class="header-right-nav">
@@ -28,30 +40,31 @@
 						<li class="header-right-nav__li">
 							<a href="#about" class="header-right-nav__link">
 								<span class="material-icons">info</span>
-								<span class="text">about</span>
+								<span class="text">About</span>
 							</a>
 						</li>
 						<li class="header-right-nav__li">
 							<a href="#about" class="header-right-nav__link">
-								<span class="material-icons">info</span>
-								<span class="text">about</span>
+								<span class="material-icons">school</span>
+								<span class="text">Experience</span>
 							</a>
 						</li>
 						<li class="header-right-nav__li">
 							<a href="#about" class="header-right-nav__link">
-								<span class="material-icons">info</span>
-								<span class="text">about</span>
+								<span class="material-icons">work</span>
+								<span class="text">My Work</span>
 							</a>
 						</li>
 						<li class="header-right-nav__li">
 							<a href="#about" class="header-right-nav__link">
-								<span class="material-icons">info</span>
-								<span class="text">about</span>
+								<span class="material-icons">phone</span>
+								<span class="text">Contact</span>
 							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+		<script src="./app.js"></script>
 	</body>
 </html>
