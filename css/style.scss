@@ -23,6 +23,7 @@
 
 	--white: #f0f0f0;
 	--black: #000000;
+	--transparent: transparent;
 
 	--primary: #6e43ee;
 	--secondary: #93e9be;
@@ -169,6 +170,7 @@ body,
 	letter-spacing: 0.025rem;
 	word-spacing: 0.25rem;
 	line-height: 1.25rem;
+	overflow-x: hidden;
 	transition: all var(--transition-time) ease-in-out;
 }
 

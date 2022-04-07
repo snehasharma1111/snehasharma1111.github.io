@@ -203,28 +203,19 @@
   height: var(--head-height);
   color: var(--white);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
 }
 @media print {
   .header {
     display: none;
   }
-}
-.header-container {
-  width: 97.5%;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
 }
 .header-left {
   height: 100%;
