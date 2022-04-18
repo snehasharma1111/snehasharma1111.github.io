@@ -1,4 +1,5 @@
 AOS.init();
+feather.replace()
 
 const header=document.querySelector('header')
 let headHeight='7rem';

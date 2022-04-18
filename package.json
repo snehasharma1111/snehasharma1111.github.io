@@ -4,7 +4,7 @@
   "description": "Sneha Sharma Portfolio",
   "main": "app.js",
   "scripts": {
-    "sass": "sass css/style.scss:css/style.css css/header.scss:css/header.css css/hero.scss:css/hero.css css/about.scss:css/about.css -w"
+    "sass": "sass css/style.scss:css/style.css css/header.scss:css/header.css css/hero.scss:css/hero.css css/about.scss:css/about.css css/work.scss:css/work.css -w"
   },
   "repository": {
     "type": "git",
