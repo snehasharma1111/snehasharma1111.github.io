@@ -11,7 +11,7 @@
 }
 
 :root {
-	--bgcolor: #f0f0f0;
+	--bgcolor: #e0e0e0;
 	--bgcolor-400: #d2d2d2;
 	--bgcolor-100: #e1e1e1;
 	--bgcolor-700: #c3c3c3;
@@ -27,6 +27,7 @@
 
 	--primary: #6e43ee;
 	--secondary: #93e9be;
+	--tertiary: #34a853;
 
 	/* --primary-1: #2d9aa6;
 	--primary-2: #9ad2d9;
@@ -1891,10 +1892,6 @@ textarea::placeholder {
 
 .dispn {
 	display: none !important;
-}
-:root {
-	--bgcolor: #e0e0e0;
-	--primary: #34a853;
 }
 body {
 	font-size: 1rem;
