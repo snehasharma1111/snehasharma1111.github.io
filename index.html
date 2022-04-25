@@ -20,6 +20,8 @@
 		<link rel="stylesheet" href="css/hero.css" />
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/work.css" />
+		<link rel="stylesheet" href="css/resume.css" />
+		<link rel="stylesheet" href="css/button.css" />
 		<link
 			rel="shortcut icon"
 			href="./images/favicon.png"
@@ -32,7 +34,7 @@
 		<header class="header" data-aos="fade-down">
 			<div class="header-left">
 				<div class="header-left-logo">
-					<a href="/">
+					<a href="#">
 						<span class="material-icons">all_inclusive</span>
 						<span>Sneha Sharma</span>
 					</a>
@@ -48,19 +50,19 @@
 							</a>
 						</li>
 						<li class="header-right-nav__li">
-							<a href="#about" class="header-right-nav__link">
-								<span class="material-icons">school</span>
-								<span class="text">Experience</span>
-							</a>
-						</li>
-						<li class="header-right-nav__li">
-							<a href="#about" class="header-right-nav__link">
+							<a href="#work" class="header-right-nav__link">
 								<span class="material-icons">work</span>
 								<span class="text">My Work</span>
 							</a>
 						</li>
 						<li class="header-right-nav__li">
-							<a href="#about" class="header-right-nav__link">
+							<a href="#resume" class="header-right-nav__link">
+								<span class="material-icons">school</span>
+								<span class="text">My Resume</span>
+							</a>
+						</li>
+						<li class="header-right-nav__li">
+							<a href="#contact" class="header-right-nav__link">
 								<span class="material-icons">phone</span>
 								<span class="text">Contact</span>
 							</a>
@@ -69,7 +71,11 @@
 				</nav>
 			</div>
 		</header>
-		<section class="hero" style="background-image: url(./images/bg.jpg)">
+		<section
+			class="hero"
+			id="hero"
+			style="background-image: url(./images/bg.jpg)"
+		>
 			<div class="hero-person">
 				<div class="hero-person-image">
 					<img src="./images/favicon.png" alt="Sneha Sharma" />
@@ -104,9 +110,7 @@
 					software and engaging experiences.
 				</p>
 				<div class="about-pro">
-					<div class="about-pro-title">
-						Self Proclamations
-					</div>
+					<div class="about-pro-title">Self Proclamations</div>
 					<div class="about-pro-container">
 						<div class="row">
 							<div class="col-lg-33 col-md-50 col-sm-100">
@@ -150,21 +154,26 @@
 				</div>
 			</div>
 		</section>
-		<section class="work">
+		<section class="work" id="work">
 			<h2 class="work-head">My Work</h2>
 			<div class="work-body">
 				<div class="row">
 					<div class="col-lg-50 col-md-50 col-sm-100">
 						<div class="work-card">
 							<div class="work-card-icon">
-								<img src='./images/code.svg' />
+								<img src="./images/code.svg" />
 							</div>
 							<div class="work-card-content">
 								<span class="work-card-content__head">
 									Development
 								</span>
 								<div class="work-card-content__para">
-									With a strong foundation in computer science, I'm passionate about web design and development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.
+									With a strong foundation in computer
+									science, I'm passionate about web design and
+									development. As I grow as a developer, I
+									hope to write clean, readable code that can
+									be used by others and leveraged to create
+									beautiful software.
 								</div>
 							</div>
 						</div>
@@ -172,18 +181,42 @@
 					<div class="col-lg-50 col-md-50 col-sm-100">
 						<div class="work-card">
 							<div class="work-card-icon">
-								<img src='./images/natraj.svg' />
+								<img src="./images/natraj.svg" />
 							</div>
 							<div class="work-card-content">
 								<span class="work-card-content__head">
 									Dance
 								</span>
 								<div class="work-card-content__para">
-									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laboriosam voluptatum maiores reprehenderit recusandae nihil pariatur quas quo? Aliquid cupiditate blanditiis voluptatum? Assumenda fugit tenetur, ipsum doloremque dolore iste deleniti minima repellat quasi rem optio!
+									Lorem, ipsum dolor sit amet consectetur
+									adipisicing elit. Quaerat laboriosam
+									voluptatum maiores reprehenderit recusandae
+									nihil pariatur quas quo? Aliquid cupiditate
+									blanditiis voluptatum? Assumenda fugit
+									tenetur, ipsum doloremque dolore iste
+									deleniti minima repellat quasi rem optio!
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="resume"
+			id="resume"
+			style="background-image: url('./images/banner.jpg')"
+		>
+			<div class="resume-container">
+				<div class="resume-title">
+					<span>Check Out My Resume</span>
+				</div>
+				<div class="resume-button">
+					<a href="./resume.pdf" target="_blank">
+						<button class="btn btn-outline btn-sm">
+							Grab A Copy
+						</button>
+					</a>
 				</div>
 			</div>
 		</section>
