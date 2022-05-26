@@ -1,0 +1,117 @@
+@import "./responsive";
+.hello {
+	width: 100%;
+	height: 25rem;
+	&-container {
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(5px) brightness(0.95);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+    &-icon{
+        width: 5rem;
+        height: 5rem;
+        margin: 1rem;
+        .material-icons{
+            font-size: 2rem;
+        }
+    }
+	&-head {
+		font-weight: 100;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		font-family: "Rokkitt", sans-serif;
+        text-transform: uppercase;
+	}
+    &-body{
+        width: 50%;
+        margin: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: center;
+        @include respond(tab){
+            width: 75%;
+        }
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+    &-btn{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+        width: 12rem;
+        height: auto;
+        &-circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #282936;
+            border-radius: 1.625rem;
+        }
+        &-icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #ffffff;
+        }
+        &-arrow {
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            &::before {
+                position: absolute;
+                content: "";
+                top: -0.35rem;
+                right: 0.0625rem;
+                width: 0.625rem;
+                height: 0.625rem;
+                border-top: 0.125rem solid #fff;
+                border-right: 0.125rem solid #fff;
+                transform: rotate(45deg);
+            }
+        }
+        &-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #282936;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &:hover &-circle {
+            width: 100%;
+        }
+        &:hover &-arrow {
+            background: #ffffff;
+            transform: translate(1rem, 0);
+        }
+        &:hover &-text {
+            color: #ffffff;
+        }
+    }
+}
